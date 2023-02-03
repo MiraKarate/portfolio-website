@@ -208,6 +208,10 @@ table, th , td {
   text-align: center;
 }
 
+.standard-label{
+  vertical-align: top;
+  text-align: left;
+}
 
 .page-footer {
     clear: both;
