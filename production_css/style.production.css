@@ -194,26 +194,20 @@ button:focus,
     text-align: center;
 }
 
-.table {
-    background-color: lightgray;
-    border: solid var(--primary-color) ;
+table {
+  max-width: 400px;
+  margin-left:50px; 
+  margin-right: 50px;
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.thead {
-    background-color: var(--secondary-color);
-    text-align: center;
-}
-
-.td {
-    text-align: center;
-    padding: 0.5em 1em;
-}
-
-.th {
-  color: var(--header-color);
+table, th , td {
+  border: 2px solid var(--text-color);
+  background-color: var(--header-color);
   text-align: center;
-  padding: 0.5em 1em;
 }
+
 
 .page-footer {
     clear: both;

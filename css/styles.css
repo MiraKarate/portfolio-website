@@ -167,25 +167,21 @@ button:focus,
     text-align: center;
 }
 
-.table {
-    background-color: lightgray;
-    border: solid var(--primary-color) ;
+table {
+  max-width: 400px;
+  margin-left:50px; 
+  margin-right: 50px;
 }
 
-.thead {
-    background-color: var(--secondary-color);
-    text-align: center;
-}
-
-.td {
-    text-align: center;
-    padding: 0.5em 1em;
-}
-
-.th {
-  color: var(--header-color);
+table, th , td {
+  background-color: lightgray;
+  border: 3px solid var(--primary-color);
   text-align: center;
-  padding: 0.5em 1em;
+}
+
+th {
+  background-color: var(--secondary-color);
+  color: var(--header-color);
 }
 
 .page-footer {
