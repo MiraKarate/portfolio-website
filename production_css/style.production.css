@@ -5,224 +5,320 @@
 * Browsers: last 4 version
 */
 
-
-:root {
-    --primary-color:#747474;
-    --secondary-color: rgb(2, 80, 126);
-    --background-color:#f4f4f4;
-    --header-color: white;
-    --text-color: black;
-    --primary-font-size: 16px;
-    --font-size-bigger: 20px;
-    --font-size-heading: 24px;
-  }
-
- * {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-
 body {
-    font-family: IBM Plex Mono, monospace;
-    font-weight: 400; 
-    font-size: var(--primary-font-size);
-    /* Sets the font size to 16px */
-    line-height: 1.6;
-    /* Sets the line-height to 1.6 */
-    background-color:var( --background-color);
-    color:var(--text-color); 
+  font-family: IBM Plex Mono, monospace;
+  font-weight: 400; 
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 */
+  background-color:#f4f4f4;
+  color:black; 
 }
 
 h1 {
-    font-size: var(--font-size-heading);
-    font-weight: 700;
-    text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
-  
+
 h2 {
-    font-size: var(--font-size-bigger);
-    font-weight: 700;
-    text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
-  
+
 h3 {
-    font-size: var(--primary-font-size);
-    font-weight: 700;
-    text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 a {
-    color: var(--text-color);
+  color: black;
 }
-  
+
 
 a:visited {
-    /* visited link */
-    color: rgb(59, 58, 58);
-}
-  
-a:active {
-    /* selected link */
-    color: grey;
+  /* visited link */
+  color: rgb(59, 58, 58);
 }
 
-a:hover, a:focus {
-    /* No underlining when hovering over a link */
-    text-decoration: none;
-    cursor: pointer;
-    /* reduces the opacity of the button to 80% */
-    opacity: 0.8;
-    color: var(--secondary-color);
+a:active {
+  /* selected link */
+  color: grey;
+}
+
+a:hover {
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  color: rgb(2, 80, 126);
+}
+
+a:focus {
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  color: rgb(2, 80, 126);
 }
 
 
 .page-header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    padding: 20px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-bottom: solid;
-    background-color: var(--header-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid;
+  background-color: white;
 }
 
 .page-header__item {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 200px;
-            flex: 0 1 200px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .page-header__item:last-child {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    text-align: right;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
 }
 
 .header_logo{
-    height: 70px;
+  height: 70px;
 }
 
 .navigation-list {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .navigation-list li {
-    display: inline-block;
-    margin-left: 15px;
+  display: inline-block;
+  margin-left: 15px;
 }
 
 .navigation-list__item{
-    text-transform:uppercase;
+  text-transform:uppercase;
 }
-
-
 
 .profile {
-    max-width: 900px;
-    margin: 0 auto;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+padding-bottom: 200px;
+padding-top: 30px;
 }
 
-.profile__text {
-    font-size: var(--font-size-heading);
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100px;
-            flex: 1 1 100px;
+.box1{
+-webkit-box-flex: 1;
+    -ms-flex: 1;
+        flex: 1;
 }
 
+.box2{
+width: 700px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+    -ms-flex-direction: row;
+        flex-direction: row;
+-webkit-column-gap: 30px;
+   -moz-column-gap: 30px;
+        column-gap: 30px;
+padding: 20px;
+}
+
+.box2_contact{
+width: 700px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+padding: 20px;
+text-align: center;
+}
+
+.box2_about{
+width: 700px;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+padding: 20px;
+text-align: center;
+}
 
 .profile__portrait {
-    float: left;
-    width: 250px;
-    margin-right: 40px;
-    border-radius: 50%;
+width: 200px;
+border-radius: 50%;
 }
 
-button,.button, a.button {
-    /* overwrites browser defaults and resets the border */
-    border: none;
-    display: inline-block;
-    /* takes the font from the outer container */
-    font-family: inherit;
-    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-    background-color: var(--primary-color);
-    color: var(--header-color);
-    text-decoration: none;
-    /*adds spacing to the button (this will be discussed more in-depth later) */
-    padding: 10px;
-    border-radius: 3px;
-    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-    border-bottom: 2px solid var(--text-color);
-    font-size: var(--primary-font-size);
-    -webkit-transition: 0.8s opacity;
-    -o-transition: 0.8s opacity;
-    transition: 0.8s opacity;
+.box3{
+-webkit-box-flex: 1;
+    -ms-flex: 1;
+        flex: 1;
+}
+
+
+.heading{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #747474;
+  color: white;
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid black;
+  font-size: 16px;
+  -webkit-transition: 0.8s opacity;
+  -o-transition: 0.8s opacity;
+  transition: 0.8s opacity;
+}
+
+.button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #747474;
+  color: white;
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid black;
+  font-size: 16px;
+  -webkit-transition: 0.8s opacity;
+  -o-transition: 0.8s opacity;
+  transition: 0.8s opacity;
+}
+
+a.button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #747474;
+  color: white;
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid black;
+  font-size: 16px;
+  -webkit-transition: 0.8s opacity;
+  -o-transition: 0.8s opacity;
+  transition: 0.8s opacity;
 }
 
 .button__secondary {
-    background-color: var(--secondary-color);
-    color: var(--header-color);
-    font-size: var(--primary-font-size);
+  background-color: rgb(2, 80, 126);
+  color: white;
+  font-size: 16px;
 }
 
 button:hover, 
 button:focus, 
 .button:hover, 
 .button:focus {
-    /* lets the mouse appear as a hand when hovering over the button */
-    cursor: pointer;
-    /* reduces the opacity of the button to 80% */
-    opacity: 0.8;
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
 }
 
-.content_box {
-    max-width: 500px;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
+
+table {
+width: 100%;
+border-collapse: collapse;
 }
 
 table {
-  max-width: 400px;
-  margin-left:50px; 
-  margin-right: 50px;
-  width: 100%;
-  border-collapse: collapse;
+border: 2px solid black;
+background-color: white;
+text-align: center;
 }
 
-table, th , td {
-  border: 2px solid var(--text-color);
-  background-color: var(--header-color);
-  text-align: center;
+th {
+border: 2px solid black;
+background-color: white;
+text-align: center;
+}
+
+td {
+border: 2px solid black;
+background-color: white;
+text-align: center;
 }
 
 .standard-label{
-  vertical-align: top;
-  text-align: left;
+vertical-align: top;
+text-align: left;
 }
 
 .page-footer {
-    clear: both;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
+  clear: both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
 
 
@@ -249,7 +345,7 @@ table, th , td {
 }
 
 .grid__item {
-   background-color: var(--primary-color);
+   background-color: #747474;
    width: auto;
    min-height: auto;
    margin: 0;
@@ -285,7 +381,7 @@ table, th , td {
       grid-row: auto / auto;
     }
     h1 {
-      font-size: var(--font-size-heading);
+      font-size: 24px;
     }
   }
 

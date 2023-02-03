@@ -1,196 +1,233 @@
-
 :root {
-    --primary-color:#737373;
-    --secondary-color: rgb(2, 80, 126);
-    --background-color:#f4f4f4;
-    --header-color: white;
-    --text-color: black;
-    --primary-font-size: 16px;
-    --font-size-bigger: 20px;
-    --font-size-heading: 24px;
-  }
+  --primary-color:#747474;
+  --secondary-color: rgb(2, 80, 126);
+  --background-color:#f4f4f4;
+  --header-color: white;
+  --text-color: black;
+  --primary-font-size: 16px;
+  --font-size-bigger: 20px;
+  --font-size-heading: 24px;
+}
 
- * {
-    box-sizing: border-box;
-  }
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 body {
-    font-family: IBM Plex Mono, monospace;
-    font-weight: 400; 
-    font-size: var(--primary-font-size);
-    /* Sets the font size to 16px */
-    line-height: 1.6;
-    /* Sets the line-height to 1.6 */
-    background-color:var( --background-color);
-    color:var(--text-color); 
+  font-family: IBM Plex Mono, monospace;
+  font-weight: 400; 
+  font-size: var(--primary-font-size);
+  /* Sets the font size to 16px */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 */
+  background-color:var( --background-color);
+  color:var(--text-color); 
 }
 
 h1 {
-    font-size: var(--font-size-heading);
-    font-weight: 700;
-    text-transform: uppercase;
+  font-size: var(--font-size-heading);
+  font-weight: 700;
+  text-transform: uppercase;
 }
-  
+
 h2 {
-    font-size: var(--font-size-bigger);
-    font-weight: 700;
-    text-transform: uppercase;
+  font-size: var(--font-size-bigger);
+  font-weight: 700;
+  text-transform: uppercase;
 }
-  
+
 h3 {
-    font-size: var(--primary-font-size);
-    font-weight: 700;
-    text-transform: uppercase;
+  font-size: var(--primary-font-size);
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 a {
-    color: var(--text-color);
+  color: var(--text-color);
 }
-  
+
 
 a:visited {
-    /* visited link */
-    color: rgb(59, 58, 58);
+  /* visited link */
+  color: rgb(59, 58, 58);
 }
-  
+
 a:active {
-    /* selected link */
-    color: grey;
+  /* selected link */
+  color: grey;
 }
 
 a:hover, a:focus {
-    /* No underlining when hovering over a link */
-    text-decoration: none;
-    cursor: pointer;
-    /* reduces the opacity of the button to 80% */
-    opacity: 0.8;
-    color: var(--secondary-color);
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  color: var(--secondary-color);
 }
 
 
 .page-header {
-    display: flex;
-    width: 100%;
-    padding: 20px;
-    align-items: center;
-    border-bottom: solid;
-    background-color: var(--header-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid;
+  background-color: var(--header-color);
 }
 
 .page-header__item {
-    flex: 0 1 200px;
-    align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .page-header__item:last-child {
-    flex-grow: 1;
-    text-align: right;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
 }
 
 .header_logo{
-    height: 70px;
+  height: 70px;
 }
 
 .navigation-list {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .navigation-list li {
-    display: inline-block;
-    margin-left: 15px;
+  display: inline-block;
+  margin-left: 15px;
 }
 
 .navigation-list__item{
-    text-transform:uppercase;
+  text-transform:uppercase;
 }
-
-
 
 .profile {
-    max-width: 900px;
-    margin: 0 auto;
+display: flex;
+flex-direction: row;
+padding-bottom: 200px;
+padding-top: 30px;
 }
 
-.profile__text {
-    font-size: var(--font-size-heading);
-    flex: 1 1 100px;
+.box1{
+flex: 1;
 }
 
+.box2{
+width: 700px;
+display: flex;
+flex-direction: row;
+column-gap: 30px;
+padding: 20px;
+}
+
+.box2_contact{
+width: 700px;
+display: flex;
+flex-direction: column;
+padding: 20px;
+text-align: center;
+}
+
+.box2_about{
+width: 700px;
+display: flex;
+flex-direction: column;
+padding: 20px;
+text-align: center;
+}
 
 .profile__portrait {
-    float: left;
-    width: 250px;
-    margin-right: 40px;
-    border-radius: 50%;
+width: 200px;
+border-radius: 50%;
+}
+
+.box3{
+flex: 1;
+}
+
+
+.heading{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  text-align: center;
+  justify-content: center;
 }
 
 button,.button, a.button {
-    /* overwrites browser defaults and resets the border */
-    border: none;
-    display: inline-block;
-    /* takes the font from the outer container */
-    font-family: inherit;
-    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-    background-color: var(--primary-color);
-    color: var(--header-color);
-    text-decoration: none;
-    /*adds spacing to the button (this will be discussed more in-depth later) */
-    padding: 10px;
-    border-radius: 3px;
-    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-    border-bottom: 2px solid var(--text-color);
-    font-size: var(--primary-font-size);
-    transition: 0.8s opacity;
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: var(--primary-color);
+  color: var(--header-color);
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid var(--text-color);
+  font-size: var(--primary-font-size);
+  -webkit-transition: 0.8s opacity;
+  -o-transition: 0.8s opacity;
+  transition: 0.8s opacity;
 }
 
 .button__secondary {
-    background-color: var(--secondary-color);
-    color: var(--header-color);
-    font-size: var(--primary-font-size);
+  background-color: var(--secondary-color);
+  color: var(--header-color);
+  font-size: var(--primary-font-size);
 }
 
 button:hover, 
 button:focus, 
 .button:hover, 
 .button:focus {
-    /* lets the mouse appear as a hand when hovering over the button */
-    cursor: pointer;
-    /* reduces the opacity of the button to 80% */
-    opacity: 0.8;
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
 }
 
-.content_box {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
 
 table {
-  max-width: 400px;
-  margin-left:50px; 
-  margin-right: 50px;
+width: 100%;
+border-collapse: collapse;
 }
 
 table, th , td {
-  background-color: lightgray;
-  border: 3px solid var(--primary-color);
-  text-align: center;
+border: 2px solid var(--text-color);
+background-color: var(--header-color);
+text-align: center;
 }
 
-th {
-  background-color: var(--secondary-color);
-  color: var(--header-color);
+.standard-label{
+vertical-align: top;
+text-align: left;
 }
 
 .page-footer {
-    clear: both;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
-
 
 
 
