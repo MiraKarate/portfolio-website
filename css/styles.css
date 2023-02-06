@@ -79,6 +79,7 @@ a:hover, a:focus {
           align-items: center;
   border-bottom: solid;
   background-color: var(--header-color);
+  flex-wrap: wrap;
 }
 
 .page-header__item {
@@ -119,6 +120,11 @@ display: flex;
 flex-direction: row;
 padding-bottom: 200px;
 padding-top: 30px;
+flex-wrap: wrap;
+}
+
+.profile > * {
+flex: 1 1 calc(250px + 1em)
 }
 
 .box1{

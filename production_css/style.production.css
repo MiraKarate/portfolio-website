@@ -5,6 +5,11 @@
 * Browsers: last 4 version
 */
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: IBM Plex Mono, monospace;
   font-weight: 400; 
@@ -80,6 +85,8 @@ a:focus {
   border-bottom: solid;
   background-color: white;
   flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .page-header__item {
@@ -125,6 +132,14 @@ display: flex;
         flex-direction: row;
 padding-bottom: 200px;
 padding-top: 30px;
+-ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.profile > * {
+-webkit-box-flex: 1;
+    -ms-flex: 1 1 calc(250px + 1em);
+        flex: 1 1 calc(250px + 1em)
 }
 
 .box1{
@@ -245,7 +260,7 @@ button {
   transition: 0.8s opacity;
 }
 
-.button, .button__secondary {
+.button {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
@@ -371,8 +386,6 @@ text-align: left;
    width: auto;
    min-height: auto;
    margin: 0;
-   border-radius: 5%;
-   padding:10px;
 }
  
 .grid__item:last-child {
