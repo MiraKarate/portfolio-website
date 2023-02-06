@@ -325,20 +325,3 @@ text-align: left;
   .cloud-back {
     animation: 33s cloud-move-reverse infinite alternate linear;
   }
-
-
-
-/* not working--look into it! */
-
-@keyframes size-nav {
-    from{
-        transform: scale(1 1);
-    }
-    to {
-        transform: scale(2 2);
-    }
-}
-
-.animation-nav {
-    animation: 4s size-nav infinite alternate linear;
-}

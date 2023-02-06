@@ -222,7 +222,7 @@ button {
   transition: 0.8s opacity;
 }
 
-.button {
+.button, .button__secondary {
   /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
@@ -469,34 +469,3 @@ text-align: left;
     -webkit-animation: 33s cloud-move-reverse infinite alternate linear;
             animation: 33s cloud-move-reverse infinite alternate linear;
   }
-
-
-
-/* not working--look into it! */
-
-@-webkit-keyframes size-nav {
-    from{
-        -webkit-transform: scale(1 1);
-                transform: scale(1 1);
-    }
-    to {
-        -webkit-transform: scale(2 2);
-                transform: scale(2 2);
-    }
-}
-
-@keyframes size-nav {
-    from{
-        -webkit-transform: scale(1 1);
-                transform: scale(1 1);
-    }
-    to {
-        -webkit-transform: scale(2 2);
-                transform: scale(2 2);
-    }
-}
-
-.animation-nav {
-    -webkit-animation: 4s size-nav infinite alternate linear;
-            animation: 4s size-nav infinite alternate linear;
-}
