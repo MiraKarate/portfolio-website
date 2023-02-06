@@ -169,13 +169,11 @@ flex-wrap: wrap;
 
 .box2-item-left {
   flex: 50%;
-  border: 2px solid rgb(2, 80, 126); 
   max-width: 204px;
 }
 
 .box2-item-right {
   flex: 50%;
-  border: 2px solid rgb(2, 80, 126);
   max-width: 500px;
 }
 
