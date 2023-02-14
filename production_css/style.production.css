@@ -384,6 +384,8 @@ text-align: left;
    width: auto;
    min-height: auto;
    margin: 0;
+   padding: 10px;
+   border-radius: 5px;
 }
  
 .grid__item:last-child {
