@@ -252,6 +252,10 @@ text-align: left;
   text-align: center;
 }
 
+.img {
+  width: 100%;
+  height: auto;
+}
 
 
   /* start grid fallback */
