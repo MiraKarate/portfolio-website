@@ -288,15 +288,26 @@ text-align: left;
  } */
 
  @media all and (max-width: 600px) {
-    .grid {
-      grid-template-columns: 1fr;
-    }
+  .grid {
+    grid-template-columns: 1fr;
   }
-  @media all and (min-width: 600px) and (max-width: 800px){
-    .grid {
-      grid-template-columns: 1fr 1fr;
-    }
+  
+  /* Adjust the width of grid items to fit a single column layout */
+  .grid__item {
+    width: 100%;
   }
+}
+
+@media all and (min-width: 600px) and (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  /* Adjust the width of grid items to fit a two column layout */
+  .grid__item {
+    width: calc(50% - 10px); /* Accounting for grid gap */
+  }
+}
   @media all and (max-width: 800px) {
     .grid {
       grid-gap: 10px;
