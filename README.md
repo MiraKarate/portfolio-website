@@ -31,6 +31,7 @@ The project is structured as follows:
 **work.html**: The HTML file for the "Work" or "Projects" section where you can showcase your projects.  
   
 ## Getting Started  
+
   
 1. Clone this repository to your local machine:  
   
