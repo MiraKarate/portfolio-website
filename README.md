@@ -34,17 +34,17 @@ The project is structured as follows:
   
 1. Clone this repository to your local machine:  
   
-bash
-Copy code
+```bash
 git clone https://github.com/your-username/your-portfolio.git
-Open the project in your preferred code editor.
 
-2. Customize the HTML and CSS files to add your personal information and style the website to your liking.
+2. Open the project in your preferred code editor.
 
-3. Add your images to the img directory and update the file paths in the HTML files accordingly.
+3. Customize the HTML and CSS files to add your personal information and style the website to your liking.
 
-4. Use the js directory to add any interactivity or functionality to your website.
+4. Add your images to the img directory and update the file paths in the HTML files accordingly.
 
-5. Test your changes locally using a web server or by opening the HTML files in a web browser.
+5. Use the js directory to add any interactivity or functionality to your website.
 
-6. Once you are satisfied with your website, you can deploy it to a hosting service of your choice.
+6. Test your changes locally using a web server or by opening the HTML files in a web browser.
+
+7. Once you are satisfied with your website, you can deploy it to a hosting service of your choice.
