@@ -33,12 +33,11 @@ The project is structured as follows:
 ## Getting Started  
 
   
-1. Clone this repository to your local machine:  
-  
-```bash
-git clone https://github.com/your-username/your-portfolio.git
-  
+1. Clone this repository to your local machine:
 
+   ```bash
+   git clone https://github.com/your-username/your-portfolio.git
+     
 2. Open the project in your preferred code editor.
 
 3. Customize the HTML and CSS files to add your personal information and style the website to your liking.
