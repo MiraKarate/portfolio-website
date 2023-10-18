@@ -37,6 +37,7 @@ The project is structured as follows:
   
 ```bash
 git clone https://github.com/your-username/your-portfolio.git
+  
 
 2. Open the project in your preferred code editor.
 
