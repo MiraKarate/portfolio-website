@@ -21,45 +21,62 @@ body {
   color:black; 
 }
 
+main {
+  margin-top: 100px; /* Passen Sie die Höhe nach Ihren Wünschen an */
+  margin-bottom: 150px; /* Passen Sie den Abstand nach Bedarf an, um den Page Footer nicht zu überlappen */
+}
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f4f4f4;
+  z-index: 100; /* Stellen Sie sicher, dass der Page Footer über anderen Inhalten angezeigt wird */
+}
+
 h1 {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 3rem;
+  font-weight: 400;
   margin-top: 0%;
   text-align: left;
-  /*text-transform: uppercase;*/
+  text-transform: uppercase;
 }
 
 h2 {
-  font-size: 20px;
-  font-weight: 700;
-  /*text-transform: uppercase;*/
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 h3 {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   text-align: left;
+  text-transform: uppercase;
 }
 
 a {
   color: black;
+  text-decoration: none;
 }
 
 
 a:visited {
   /* visited link */
   color: rgb(0, 0, 0);
+  text-decoration: underline;
 }
 
 a:active {
   /* selected link */
   color: rgb(0, 0, 0);
+  text-decoration: underline;
 }
 
 a:hover {
   /* No underlining when hovering over a link */
-  text-decoration: none;
   cursor: pointer;
+  text-decoration: underline;
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
   color: rgb(0, 0, 0);
@@ -67,34 +84,46 @@ a:hover {
 
 a:focus {
   /* No underlining when hovering over a link */
-  text-decoration: none;
+  text-decoration: underline;
   cursor: pointer;
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
   color: rgb(0, 0, 0);
 }
 
+.header-text {
+  font-family: font-family: IBM Plex Mono, monospace;
+  font-weight: bold;
+  font-size: 28px; /* You can adjust the font size as needed */
+  text-transform: uppercase;
+  margin: 0;
+  padding-left: 37px;
+  line-height: 70px; /* Adjust the line height to vertically center the text */
+}
+
 
 .page-header {
+  position: fixed; /* Make the header fixed */
+  top: 0; /* Stick it to the top of the viewport */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  padding: 20px;
+  padding-right: 15px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-bottom: solid;
-  background-color: white;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f4f4f4;
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
+  z-index: 100; /* Set a higher z-index to keep it above other content */
 }
 
 .page-header__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+      -ms-flex: 0 1 400px;
+          flex: 0 1 400px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -109,6 +138,15 @@ a:focus {
 
 .header_logo{
   height: 70px;
+}
+
+.title-logo {
+  font-family: IBM Plex Mono, monospace;
+  font-weight: bold;
+  font-size: 28px; /* You can adjust the font size as needed */
+  text-transform: uppercase;
+  margin: 0;
+  padding-left: 37px;
 }
 
 .navigation-list {
@@ -127,6 +165,11 @@ a:focus {
 }
 
 .navigation-list__item{
+  text-transform:uppercase;
+}
+
+.navigation-list__item--active {
+  text-decoration: underline; /* Unterstreiche den aktiven Link, wenn gewünscht */
   text-transform:uppercase;
 }
 
@@ -266,84 +309,6 @@ padding-top: 7px;
           justify-content: left;
 }
 
-button {
-  /* overwrites browser defaults and resets the border */
-  border: none;
-  display: inline-block;
-  /* takes the font from the outer container */
-  font-family: inherit;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color:rgb(240 240 232);
-  color: white;
-  text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
-  padding: 10px;
-  border-radius: 3px;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  /*border-bottom: 1px solid black;*/
-  font-size: 16px;
-  -webkit-transition: 0.8s opacity;
-  -o-transition: 0.8s opacity;
-  transition: 0.8s opacity;
-}
-
-.button {
-  /* overwrites browser defaults and resets the border */
-  border: none;
-  display: inline-block;
-  /* takes the font from the outer container */
-  font-family: inherit;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: rgb(240 240 232);
-  color: white;
-  text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
-  padding: 10px;
-  border-radius: 3px;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  border-bottom: 2px solid black;
-  font-size: 16px;
-  -webkit-transition: 0.8s opacity;
-  -o-transition: 0.8s opacity;
-  transition: 0.8s opacity;
-}
-
-a.button {
-  /* overwrites browser defaults and resets the border */
-  border: 1px solid black;
-  display: inline-block;
-  /* takes the font from the outer container */
-  font-family: inherit;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #f4f4f4;
-  color: black;
-  text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
-  padding: 10px;
-  border-radius: 3px;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  /*border-bottom: 1px solid black;*/
-  font-size: 16px;
-  -webkit-transition: 0.8s opacity;
-  -o-transition: 0.8s opacity;
-  transition: 0.8s opacity;
-}
-
-.button__secondary {
-  background-color: rgb(2, 80, 126);
-  color: white;
-  font-size: 16px;
-}
-
-button:hover, 
-button:focus, 
-.button:hover, 
-.button:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
-  cursor: pointer;
-  /* reduces the opacity of the button to 80% */
-  opacity: 0.8;
-}
 
 ul {
   list-style: none;
@@ -364,28 +329,6 @@ ul li:before {
   text-align: left;
 }
 
-table {
-width: 100%;
-border-collapse: collapse;
-}
-
-table {
-border: 2px solid black;
-background-color: white;
-text-align: center;
-}
-
-th {
-border: 2px solid black;
-background-color: white;
-text-align: center;
-}
-
-td {
-border: 2px solid black;
-background-color: white;
-text-align: center;
-}
 
 .standard-label{
 vertical-align: top;
@@ -402,6 +345,7 @@ text-align: left;
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  padding-left: 37px;
 }
 
 
@@ -423,13 +367,14 @@ text-align: left;
     }
   
     .grid__item {
-      background-color: #dcdcdc;
+      background-color: #ffffff;
       width: auto;
       min-height: auto;
       margin: 0;
       padding: 10px;
-      border-radius: 5px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+      border-radius: 30px;
+      /*border: 1px solid black;*/
+      /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
     }
   
     @media (max-width: 1200px) {
