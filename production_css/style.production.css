@@ -92,7 +92,7 @@ a:focus {
 }
 
 .header-text {
-  font-family: font-family: IBM Plex Mono, monospace;
+  font-family: IBM Plex Mono, monospace;
   font-weight: bold;
   font-size: 28px; /* You can adjust the font size as needed */
   text-transform: uppercase;
@@ -377,6 +377,19 @@ text-align: left;
       /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
     }
   
+    .grid__item h2 {
+      line-height: 1.2; /* Du kannst den Wert nach Bedarf anpassen */
+    }
+
+    .myflix-grid {
+      display: grid;
+      grid-column: span 2; /* Zwei Grid-Elemente pro Zeile */
+    }
+
+    .grid__item:last-child {
+      grid-column: span 3; /* Das letzte Grid-Element erstreckt sich über zwei Spalten */
+    }
+
     @media (max-width: 1200px) {
       /* Bei Bildschirmen mit einer Breite von maximal 1200px */
       .grid {
