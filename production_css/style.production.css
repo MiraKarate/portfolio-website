@@ -381,9 +381,14 @@ text-align: left;
       line-height: 1.2; /* Du kannst den Wert nach Bedarf anpassen */
     }
 
-    .myflix-grid {
+    .grid_2{
       display: grid;
       grid-column: span 2; /* Zwei Grid-Elemente pro Zeile */
+    }
+
+    .grid_3 {
+      display: grid;
+      grid-column: span 3; /* Zwei Grid-Elemente pro Zeile */
     }
 
     .grid__item:last-child {
