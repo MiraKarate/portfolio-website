@@ -37,8 +37,8 @@ main {
 h1 {
   font-size: 3rem;
   font-weight: 400;
-  margin-top: 0%;
-  margin-bottom: 0%;
+  margin:0% ;
+  margin-left: -0.2;
   text-align: left;
   text-transform: uppercase;
 }
@@ -101,7 +101,7 @@ a:focus {
   font-size: 28px; /* You can adjust the font size as needed */
   text-transform: uppercase;
   margin: 0;
-  padding-left: 37px;
+  padding-left: 39px;
   line-height: 70px; /* Adjust the line height to vertically center the text */
 }
 
@@ -150,7 +150,7 @@ a:focus {
   font-size: 28px; /* You can adjust the font size as needed */
   text-transform: uppercase;
   margin: 0;
-  padding-left: 37px;
+  padding-left: 39px;
 }
 
 .navigation-list {
@@ -272,6 +272,7 @@ text-align: center;
 .box2_about h1 {
   text-align: left;
   margin: 0;
+  padding-left: 0%;
 }
 
 .box2_about p {
@@ -307,6 +308,7 @@ padding-top: 19px;
   padding-bottom: 20px;
   padding-top: 67px;
   padding-left: 37px;
+  margin-left: 0%;
   text-align: left;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
@@ -370,7 +372,7 @@ text-align: left;
    @supports (display: grid) {
     .grid {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr; /* Standard: Drei Grid-Elemente pro Zeile */
+      grid-template-columns: repeat(3, 1fr);
       grid-gap: 20px;
       justify-content: center;
       padding: 30px;
@@ -387,19 +389,22 @@ text-align: left;
       /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
     }
 
-    /* Passen Sie den Zeilenabstand nach Bedarf an */
-.grid__item h2,
-.grid__item h3,
-.grid__item p {
-    margin-bottom: 10px; /* Hier können Sie den Abstand anpassen */
-}
+      /* Passen Sie den Zeilenabstand nach Bedarf an */
+    .grid__item h2,
+    .grid__item h3,
+    .grid__item p {
+      margin: 10px 0; /* Ändern Sie den Wert (oben/unten) nach Bedarf */
+    }
 
-/* Spezielle Anpassung für Listen (ul und li) */
-.grid__item ul,
-.grid__item li {
-    margin-bottom: 2px; /* Hier können Sie den Abstand für Listen anpassen */
-}
-  
+    .grid__item ul {
+      margin: 0; /* Remove margin to reset it */
+      padding: 0; /* Remove padding to reset it */
+    }
+    
+    .grid__item li {
+      margin: 2px 0; /* Ändern Sie den Wert (oben/unten) nach Bedarf */
+    }
+    
     .grid__item h2 {
       line-height: 1.2; /* Du kannst den Wert nach Bedarf anpassen */
     }
@@ -418,47 +423,78 @@ text-align: left;
       grid-column: span 3; /* Das letzte Grid-Element erstreckt sich über zwei Spalten */
     }
 
-    @media (max-width: 1200px) {
-      /* Bei Bildschirmen mit einer Breite von maximal 1200px */
+      /* Bei Bildschirmen mit einer Breite von maximal 1250px */
+    @media (max-width: 1250px) {
       .grid {
-        grid-template-columns: 1fr 1fr; /* Zwei Grid-Elemente pro Zeile */
+        grid-template-columns: repeat(2, 1fr); /* Zwei Grid-Elemente pro Zeile */
+        grid-gap: 20px; /* Füge einen Abstand zwischen den Grid-Elementen hinzu */
+      }
+
+      .grid__item.grid_2 {
+        grid-column: span 2; /* Zwei Grid-Elemente pro Zeile für .grid_2 */
+      }
+
+      .grid__item.grid_3 {
+        grid-column: span 2; /* Zwei Grid-Elemente pro Zeile für .grid_3 */
       }
     }
-  
+
+    @media (min-width: 1120px) {
+      .grid__item {
+        grid-column: span 1; /* Display one item per row */
+      }
+      .grid__item.grid_2 {
+        grid-column: span 2; /* Display two items per row */
+      }
+    }
+    
+    /* Add another media query to target screens with a maximum width of 1120px */
+    @media (max-width: 1120px) {
+      .grid__item {
+        grid-column: span 2; /* Display two items per row */
+      }
+      .grid__item.grid_2 {
+        grid-column: span 2; /* Display two items per row */
+      }
+    }
+      
     @media (max-width: 800px) {
       /* Bei Bildschirmen mit einer Breite von maximal 800px */
       .grid {
         grid-template-columns: 1fr; /* Ein Grid-Element pro Zeile */
       }
     }
-  
-    /* Für Bildschirme mit einer Breite von maximal 600px */
-@media (max-width: 600px) {
-  .profile {
-    flex-direction: column;
+    
+      /* Für Bildschirme mit einer Breite von maximal 600px */
+  @media (max-width: 600px) {
+    .profile {
+      flex-direction: column;
+    }
+
+    .box1, .box2, .box2_about {
+      width: 100%;
+      padding-left: 37px;
+      text-align: left;
+    }
+
+    .grid__item img {
+      width: 100%; /* Bilder füllen die Breite des Containers */
+    }
+
+    .grid {
+      grid-template-columns: 1fr; /* Ein Grid-Element pro Zeile */
+    }
+
+    .grid__item {
+      width: 100%;
+      margin: 0;
+      padding: 10px;
+    }
   }
 
-  .box1, .box2, .box2_about {
-    width: 100%;
-    padding-left: 37px;
-    text-align: left;
+  /* Für Bildschirme mit einer Breite von maximal 500px */
+  @media (max-width: 500px) {
+    /* Hier kannst du weitere Anpassungen für 500px oder weniger hinzufügen, falls nötig */
   }
-
-
-  .grid {
-    grid-template-columns: 1fr; /* Ein Grid-Element pro Zeile */
-  }
-
-  .grid__item {
-    width: 100%;
-    margin: 0;
-    padding: 10px;
-  }
-}
-
-/* Für Bildschirme mit einer Breite von maximal 500px */
-@media (max-width: 500px) {
-  /* Hier kannst du weitere Anpassungen für 500px oder weniger hinzufügen, falls nötig */
-}
   }
   
