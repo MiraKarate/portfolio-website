@@ -38,6 +38,7 @@ h1 {
   font-size: 3rem;
   font-weight: 400;
   margin-top: 0%;
+  margin-bottom: 0%;
   text-align: left;
   text-transform: uppercase;
 }
@@ -46,7 +47,10 @@ h2 {
   font-size: 28px;
   font-weight: 400;
   text-transform: uppercase;
+  word-spacing: -8px;
+  line-height: 1px;
 }
+
 
 h3 {
   font-size: 16px;
@@ -282,7 +286,7 @@ text-align: center;
 
 .profile__portrait {
 width: 350px;
-padding-top: 7px;
+padding-top: 19px;
 }
 
 .box3{
@@ -345,9 +349,15 @@ text-align: left;
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  padding-left: 37px;
 }
 
+.page-footer_p{
+  line-height: 0,5 !important;
+}
+
+.page-footer p {
+  margin-bottom: 5px; /* Passen Sie den Wert nach Ihren Wünschen an */
+}
 
   /* start grid fallback */
 .grid__item {
@@ -376,6 +386,19 @@ text-align: left;
       /*border: 1px solid black;*/
       /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
     }
+
+    /* Passen Sie den Zeilenabstand nach Bedarf an */
+.grid__item h2,
+.grid__item h3,
+.grid__item p {
+    margin-bottom: 10px; /* Hier können Sie den Abstand anpassen */
+}
+
+/* Spezielle Anpassung für Listen (ul und li) */
+.grid__item ul,
+.grid__item li {
+    margin-bottom: 2px; /* Hier können Sie den Abstand für Listen anpassen */
+}
   
     .grid__item h2 {
       line-height: 1.2; /* Du kannst den Wert nach Bedarf anpassen */
