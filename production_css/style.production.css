@@ -22,7 +22,7 @@ body {
 }
 
 main {
-  margin-top: 100px; /* Passen Sie die Höhe nach Ihren Wünschen an */
+  margin-top: 90px; /* Passen Sie die Höhe nach Ihren Wünschen an */
   margin-bottom: 150px; /* Passen Sie den Abstand nach Bedarf an, um den Page Footer nicht zu überlappen */
 }
 
@@ -246,8 +246,13 @@ display: flex;
 -webkit-box-direction: normal;
     -ms-flex-direction: column;
         flex-direction: column;
-padding: 37px;
-text-align: center;
+padding: 40px;
+text-align: left;
+}
+
+.box2_contact div {
+  margin-left: 0.3rem; /* Ändert den oberen Abstand für den Text darunter */
+  margin-top: 15px;
 }
 
 .box2_about{
@@ -260,7 +265,7 @@ display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
 padding: 37px;
-padding-left: 80px;
+padding-left: 40px;
 text-align: center;
 }
 
@@ -310,7 +315,7 @@ padding-top: 19px;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   padding-top: 67px;
   padding-left: 37px;
   margin-left: 0%;
