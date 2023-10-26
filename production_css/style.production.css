@@ -41,6 +41,7 @@ h1 {
   margin-left: -0.2;
   text-align: left;
   text-transform: uppercase;
+  word-spacing: -8px;
 }
 
 h2 {
@@ -64,6 +65,9 @@ a {
   text-decoration: none;
 }
 
+.img{
+  margin-top: 10px;
+}
 
 a:visited {
   /* visited link */
@@ -103,6 +107,7 @@ a:focus {
   margin: 0;
   padding-left: 39px;
   line-height: 70px; /* Adjust the line height to vertically center the text */
+  word-spacing: -8px;
 }
 
 
@@ -217,7 +222,7 @@ display: flex;
     -ms-flex-direction: row;
         flex-direction: row;
 padding-top: 37px;
-padding-left: 80px;
+padding-left: 40px;
 flex-wrap: wrap;
 }
 
@@ -404,6 +409,7 @@ text-align: left;
     .grid__item li {
       margin: 2px 0; /* Ändern Sie den Wert (oben/unten) nach Bedarf */
     }
+
     
     .grid__item h2 {
       line-height: 1.2; /* Du kannst den Wert nach Bedarf anpassen */
@@ -479,6 +485,7 @@ text-align: left;
 
     .grid__item img {
       width: 100%; /* Bilder füllen die Breite des Containers */
+      padding-top: 10px;
     }
 
     .grid {
