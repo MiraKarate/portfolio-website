@@ -455,10 +455,10 @@ text-align: left;
     /* Add another media query to target screens with a maximum width of 1120px */
     @media (max-width: 1120px) {
       .grid__item {
-        grid-column: span 2; /* Display two items per row */
+        grid-column: span 3; /* Display two items per row */
       }
       .grid__item.grid_2 {
-        grid-column: span 2; /* Display two items per row */
+        grid-column: span 3; /* Display two items per row */
       }
     }
       
